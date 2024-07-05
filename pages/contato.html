@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="/styles/css/teatro.css">
+    <link rel="stylesheet" href="/styles/css/flex.css">
+    <link rel="stylesheet" href="/styles/css/grid.css">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+        <ul class="categorias">
+            <li class="link_categorias">
+                <a href="../index.html">Home</a>
+            </li>
+            <li class="link_categorias">
+                <a href="./sobre.html">Sobre mim</a>
+            </li>
+            <div class="dropdown">
+              <button class="dropbtn">Projetos</button>
+            <div class="dropdown-content">
+                <li class="sub-categorias-link"><a href="./teatro.html">Teatro</a></li>
+                <li class="sub-categorias-link"><a href="#">Música</a></li>
+                <li class="sub-categorias-link"><a href="#">Aulas</a></li>
+            </div>
+            </div>
+            <li class="link_categorias">
+                <a href="./bastidores.html">Bastidores</a>
+            </li>
+
+            <li class="link_categorias">
+                <a href="/pages/contato.html">Contato</a>
+            </li>
+            
+        </ul>
+    </nav>
+  </header>
+  <main>
+    <form action="mailto:seuemail@example.com" method="post" enctype="text/plain">
+        
+        <label for="nomesobrenome">Nome e sobrenome</label>
+        <input type="text" id="nomesobrenome" class="input-padrao" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+        <label for="mensagem">Mensagem</label>
+        <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+        <fieldset>
+            <legend>Como prefere o meu contato?</legend>
+            <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
+            
+            <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
+            
+            <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> WhatsApp</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Qual horário prefere o contato?</legend>
+            <select>
+                <option>Manhã</option>
+                <option>Tarde</option>
+                <option>Noite</option>
+            </select>
+        </fieldset>
+
+        <label class="checkbox"><input type="checkbox" checked>Gostaria de receber minhas novidades por email?</label>
+
+        <input type="submit" value="Enviar formulário" class="enviar">
+    </form>
+
+</main>
+
+<footer class="rodape">
+  <ul class="rodape__lista">
+      <li>
+          <h3 class="rodape__titulo">Encontre eventos</h3>
+      </li>
+      <li>Esta semana</li>
+      <li>Este fim de semana</li>
+      <li>Este mês</li>
+      <li>Este trimestre</li>
+  </ul>
+  <ul class="rodape__lista">
+      <li>
+          <h3 class="rodape__titulo">Cidades</h3>
+      </li>
+      <li>São Paulo</li>
+      <li>Rio de Janeiro</li>
+      <li>Porto Alegre</li>
+      <li>Salvador</li>
+  </ul>
+  <ul class="rodape__lista">
+      <li>
+          <h3 class="rodape__titulo">Categorias</h3>
+      </li>
+      <li>Shows</li>
+      <li>Arte</li>
+      <li>Teatro</li>
+  </ul>
+  <ul class="rodape__lista">
+      <li>
+          <h3 class="rodape__titulo">Sobre nós</h3>
+      </li>
+      <li>Carreiras</li>
+      <li>História</li>
+      <li>Contato</li>
+      <li>Localização</li>
+  </ul>
+  <ul class="rodape__lista">
+      <li>
+          <h3 class="rodape__titulo">Anuncie seu evento</h3>
+      </li>
+      <li>Música e festas</li>
+      <li>Cursos e workshops</li>
+  </ul>
+  <div class="rodape__logo">
+      <h4></h4>
+      <p>Desenvolvido por Djéfani.</p>
+  </div>
+</footer>
+<!-- VLibras -->
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="root"></div>
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget("https://vlibras.gov.br/app");
+</script>
+<script src="../js/acessibilidade.js"></script>
+</body>
+</html>

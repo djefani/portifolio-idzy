@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eu sou arte</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="/styles/css/teatro.css">
+    <link rel="stylesheet" href="/styles/css/flex.css">
+    <link rel="stylesheet" href="/styles/css/grid.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+          theme: {
+              extend:{
+                  colors: {
+                      azul: {
+                          claro: '#C5DFFF',
+                          escuro: '#061E3C',
+                          hover: '#1057B0'
+                      },
+                  },
+                  fontFamily: {
+                      inter: ['Inter', 'sans-serif']
+                  },
+                  keyframes: {
+                      sino_kf: {
+                          '0%, 100%': {
+                              transform: 'rotate(-10deg)'
+                          },
+                          '50%': {
+                              transform: 'rotate(10deg)'
+                          }
+                      }
+                  },
+                  animation: {
+                      sino: 'sino_kf 0.31s ease-in-out infinite'
+                  }
+              }
+          }
+      }
+  </script>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+        <ul class="categorias">
+          <li class="link_categorias">
+            <a href="index.html">Home</a>
+        </li>
+            <li class="link_categorias">
+                <a href="./pages/sobre.html">Sobre mim</a>
+            </li>
+            <div class="dropdown">
+              <button class="dropbtn">Projetos</button>
+            <div class="dropdown-content">
+                <li class="sub-categorias-link"><a href="./pages/teatro.html">Teatro</a></li>
+                <li class="sub-categorias-link"><a href="#">Música</a></li>
+                <li class="sub-categorias-link"><a href="#">Aulas</a></li>
+            </div>
+            </div>
+            <li class="link_categorias">
+                <a href="./pages/bastidores.html">Bastidores</a>
+            </li>
+            <li class="link_categorias">
+              <a href="/pages/contato.html">Contato</a>
+          </li>
+      
+        </ul>
+        
+    </nav>
+    <section class="banner">
+        <div class="inner-banner">
+            <h1>Eu sou Arte!</h1>
+            <h2>A minha realidade como artista!</h2>
+        </div>
+    </section>
+  </header>
+      <main>
+        <section class="carrossel">
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+    
+                <!--   Bullets do carrossel, se aumentar uma imagem, aumente um li e acrescento o próximo número -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel" data-slide-to="1"></li>
+                    <li data-target="#carousel" data-slide-to="2"></li>
+                    <li data-target="#carousel" data-slide-to="3"></li>
+                  </ol>
+                
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <h5 class="contador"> 1 / 6 <h5>
+                      <img src="./images/carrossel_1.jpg">
+                       <div class="titulo">
+                        <h2> Dança contemporânea </h2>
+                        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                    </div>
+                    </div>
+                
+                    <div class="carousel-item">
+                      <h5 class="contador"> 2 / 6 <h5>
+                      <img src="./images/carrossel_2.jpg">
+                      <div class="titulo">
+                      <h2> Dança contemporânea </h2>
+                      <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                    </div>
+                    </div>
+                
+                    <div class="carousel-item">
+                      <h5 class="contador"> 3 / 6 <h5>
+                      <img src="./images/carrossel_3.jpg">
+                      <div class="titulo">
+                      <h2> Dança contemporânea </h2>
+                      <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                    </div>
+                    </div>
+                  
+                
+                  <div class="carousel-item">
+                    <h5 class="contador"> 4 / 6 <h5>
+                      <img src="images/carrossel_4.jpg">
+                      <div class="titulo">
+                      <h2> Dança contemporânea </h2>
+                      <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                    </div>
+                    </div>
+    
+                    <div class="carousel-item">
+                        <h5 class="contador"> 5 / 6 <h5>
+                          <img src="images/carrossel_5.jpg">
+                          <div class="titulo">
+                          <h2> Dança contemporânea </h2>
+                          <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                        </div>
+                        </div>
+    
+                    <div class="carousel-item">
+                        <h5 class="contador"> 6 / 6 <h5>
+                            <img src="images/carrossel_6.jpg">
+                            <div class="titulo">
+                              <h2> Dança contemporânea </h2>
+                              <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                            </div>
+                    </div>
+                
+                  </div> <!-- Fecha elementos dentro do carrossel -->
+                  
+                  <!--   Controladores | Botões -->
+                  <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only"> Previous </span>
+                  </a>
+                  <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only"> Next </span>
+                  </a> 
+                </div>
+        </section>
+      <section id="cadastro">
+        <div class="flex justify-center items-center self-center relative group">
+          <svg class="fill-azul-escuro absolute top-0 left-400 opacity-0 group-hover:opacity-100 group-hover:animate-ping"
+              width="35" height="20" viewBox="0 0 44 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M41.1738 0.994633C40.8556 1.10918 40.6199 1.34129 40.4506 1.70905C40.3201 1.99542 40.2881 2.17026 40.3041 2.53199C40.3178 2.86056 40.3659 3.0776 40.4734 3.28861C40.5444 3.42728 41.7665 5.17565 41.9221 5.36254C41.9748 5.42584 42.0984 5.52834 42.1945 5.58561C42.3661 5.69413 42.373 5.69714 42.6545 5.69714C42.9291 5.69714 42.9474 5.69413 43.1237 5.59465C43.3663 5.45599 43.5722 5.19373 43.6912 4.86818C43.8034 4.56673 43.8285 4.34366 43.7874 4.00303C43.753 3.69255 43.7004 3.52374 43.5814 3.31574C43.4784 3.13789 42.4096 1.60958 42.2242 1.37445C41.9519 1.03081 41.5171 0.874056 41.1738 0.994633Z" />
+              <path d="M37.4844 2.65246C37.2807 2.71275 37.1159 2.82428 36.9671 3.00515C36.8252 3.17697 36.7497 3.32468 36.6765 3.58995C36.6376 3.73464 36.6284 3.83412 36.6284 4.11446C36.6284 4.50935 36.665 4.69021 36.8069 4.97357C36.9168 5.19061 36.9923 5.272 37.3013 5.51617C37.9833 6.05274 38.4112 6.48983 38.9788 7.21631C39.6997 8.14475 40.265 9.19076 40.7365 10.4659C40.8738 10.8366 40.9127 10.915 41.0317 11.0597C41.1118 11.1592 41.2423 11.2737 41.343 11.337C41.5009 11.4365 41.5421 11.4516 41.7457 11.4636C42.1279 11.4878 42.3385 11.3913 42.5925 11.0778C42.9084 10.6889 43.0205 10.1493 42.9084 9.56756C42.8237 9.12745 42.4598 8.2171 42.025 7.35497C41.2194 5.75431 40.2078 4.41891 38.9811 3.33975C38.5966 3.00213 38.2831 2.76399 38.1297 2.69466C37.9535 2.61629 37.6697 2.59518 37.4844 2.65246Z" />
+              <path d="M2.11178 10.095C1.947 10.1674 1.79824 10.2638 1.6861 10.3723C1.60371 10.4507 1.4046 10.7883 0.85991 11.7801C0.466269 12.4945 0.120689 13.1426 0.0909372 13.218C0.0588967 13.3024 0.0291448 13.4652 0.0131245 13.634C-0.018916 13.9686 0.00625871 14.1886 0.104669 14.4659C0.248851 14.8669 0.459403 15.111 0.786674 15.2557C0.946877 15.3251 0.992649 15.3341 1.19634 15.322C1.384 15.31 1.45266 15.2919 1.57396 15.2226C1.76391 15.114 1.94242 14.9392 2.03397 14.7764C2.67249 13.6309 3.43231 12.2202 3.45977 12.1298C3.48037 12.0634 3.50783 11.8826 3.52385 11.7288C3.54674 11.4877 3.54445 11.4214 3.51241 11.2405C3.37738 10.514 2.92424 10.0468 2.36353 10.0558C2.27656 10.0558 2.16213 10.0739 2.11178 10.095Z" />
+              <path d="M6.00014 11.0928C5.69804 11.1802 5.49893 11.3671 5.00688 12.0303C3.94497 13.4651 3.16455 15.102 2.62215 17.0463C2.44822 17.6672 2.44822 17.9838 2.62215 18.442C2.72743 18.7223 2.92882 18.9906 3.13022 19.1202C3.63143 19.4427 4.27453 19.2106 4.58349 18.5987C4.67274 18.4209 4.69792 18.3425 4.85583 17.7758C4.97484 17.3537 5.25176 16.6182 5.48062 16.1208C5.8674 15.2768 6.22442 14.692 6.8309 13.9083C7.21997 13.4018 7.2932 13.2662 7.35271 12.9436C7.48316 12.2111 7.24743 11.5208 6.76453 11.2164C6.50134 11.0506 6.27248 11.0144 6.00014 11.0928Z" />
+          </svg>
+          <svg class="w-12 h-12 fill-azul-claro stroke-azul-escuro group-hover:animate-sino" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path>
+          </svg>
+      </div>
+        <div class="texto">
+            <h2><i class="fas fa-envelope"></i> Fique por dentro das novidades!</h2>
+        </div>
+        <div class="inscricao">
+            <form action="">
+                <div class="input">
+                    <input type="email">
+                </div>
+                <button>enviar!</button>
+            </form>
+        </div>
+    </section>
+    <section class="carrossel">
+      <div id="carousel" class="carousel slide" data-ride="carousel">
+
+          <!--   Bullets do carrossel, se aumentar uma imagem, aumente um li e acrescento o próximo número -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel" data-slide-to="1"></li>
+              <li data-target="#carousel" data-slide-to="2"></li>
+              <li data-target="#carousel" data-slide-to="3"></li>
+            </ol>
+          
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h5 class="contador"> 1 / 4 <h5>
+                <img src="./images/perfil.jpg">
+                 <div class="titulo">
+                  <h2> Imagem 1 </h2>
+                  <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+              </div>
+              </div>
+          
+              <div class="carousel-item">
+                <h5 class="contador"> 2 / 4 <h5>
+                <img src="./images/carrossel_9.jpg">
+                <div class="titulo">
+                <h2> Imagem 2 </h2>
+                <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+              </div>
+              </div>
+          
+              <div class="carousel-item">
+                <h5 class="contador"> 3 / 4 <h5>
+                <img src="./images/carrossel_10.jpg">
+                <div class="titulo">
+                <h2> Imagem 3 </h2>
+                <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+              </div>
+              </div>
+            
+          
+            <div class="carousel-item">
+              <h5 class="contador"> 4 / 4 <h5>
+                <img src="images/carrossel_12.jpg">
+                <div class="titulo">
+                <h2> Imagem 4 </h2>
+                <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+              </div>
+              </div>
+          
+            </div> <!-- Fecha elementos dentro do carrossel -->
+            
+            <!--   Controladores | Botões -->
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only"> Previous </span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only"> Next </span>
+            </a> 
+          </div>
+  </section>
+    
+<section id="eventos">
+  <h3>Eventos</h3>
+  <h4>Uma ampla diversidade de serviços com alto padrão de qualidade</h4>
+  <div class="cards">
+      <div class="card">
+          <div class="img-container">
+              <img src="./images/carrossel_7.jpg" alt="">
+          </div>
+          <h5>Teatro</h5>
+          <p>Fazer o que gosto aflora minha criatividade, brincar e explorar novos horizontes, não me prender e deixe minha imaginação fluir. Com o teatro eu posso viver várias vidas em vários mundos.</p>
+      </div>
+      <div class="card">
+          <div class="img-container">
+              <img src="./images/carrossel_12.jpg" alt="">
+          </div>
+          <h5>Música</h5>
+          <p>Eu canto, componho, dedilho, eu vivo. A música está presente no meu dia desde sempre. </p>
+      </div>
+      <div class="card">
+          <div class="img-container">
+              <img src="./images/carrossel_8.jpg" alt="">
+          </div>
+          <h5>Aulas</h5>
+          <p>Busco aprimorar tudo que venho apredendo e com o pouco conhecimento que tenho adiquirido já me vejo sendo capaz de criar diversas coisas. </p>
+      </div>
+  </div>
+</section>
+      </main>
+      <footer class="rodape">
+        <ul class="rodape__lista">
+            <li>
+                <h3 class="rodape__titulo">Encontre eventos</h3>
+            </li>
+            <li>Esta semana</li>
+            <li>Este fim de semana</li>
+            <li>Este mês</li>
+            <li>Este trimestre</li>
+        </ul>
+        <ul class="rodape__lista">
+            <li>
+                <h3 class="rodape__titulo">Cidades</h3>
+            </li>
+            <li>São Paulo</li>
+            <li>Rio de Janeiro</li>
+            <li>Porto Alegre</li>
+            <li>Salvador</li>
+        </ul>
+        <ul class="rodape__lista">
+            <li>
+                <h3 class="rodape__titulo">Categorias</h3>
+            </li>
+            <li>Shows</li>
+            <li>Arte</li>
+            <li>Teatro</li>
+        </ul>
+        <ul class="rodape__lista">
+            <li>
+                <h3 class="rodape__titulo">Sobre nós</h3>
+            </li>
+            <li>Carreiras</li>
+            <li>História</li>
+            <li>Contato</li>
+            <li>Localização</li>
+        </ul>
+        <ul class="rodape__lista">
+            <li>
+                <h3 class="rodape__titulo">Anuncie seu evento</h3>
+            </li>
+            <li>Música e festas</li>
+            <li>Cursos e workshops</li>
+        </ul>
+        <div class="rodape__logo">
+            <h4></h4>
+            <p>Desenvolvido por Djéfani.</p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="script.js"> </script>
+    <!-- VLibras -->
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="root"></div>
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget("https://vlibras.gov.br/app");
+</script>
+<script src="../js/acessibilidade.js"></script>
+    </body>
